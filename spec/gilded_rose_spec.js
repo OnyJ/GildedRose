@@ -1,11 +1,8 @@
-// var { Shop, Item, BasicProduct, AgedBrie } = require("../src/gilded_rose.js");
-// var { Item } = require("../src/Item");
 import Item from "../src/Item";
 import BasicProduct from "../src/products/BasicProduct";
-// var { AgedBrie } = require("../src/products/AgedBrie");
-// var { BasicProduct } = require("../src/products/BasicProduct");
-// var { BackStage } = require("../src/products/BackStage");
-// var { Sulfuras } = require("../src/products/Sulfuras");
+import AgedBrie from "../src/products/AgedBrie";
+import BackStage from "../src/products/BackStage";
+import Sulfuras from "../src/products/Sulfuras";
 
 describe("GildedRose shop manager", function () {
   var listItems;
