@@ -1,5 +1,3 @@
-// export default class Item {
-
 class Item {
   constructor(name, sellIn, quality) {
     this.name = name;
@@ -9,8 +7,5 @@ class Item {
 
   updateQuality() {}
 }
-
-// or
-// module.exports = { Item };
 
 export default Item;
