@@ -1,8 +1,6 @@
-// import Item from "../Item";
-var { Item } = require("../Item");
+import Item from "../Item";
 
-// export default class IsConjured extends Item {
-class IsConjured extends Item {
+export default class IsConjured extends Item {
   constructor() {}
 
   check() {

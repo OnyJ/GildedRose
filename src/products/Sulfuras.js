@@ -1,7 +1,5 @@
-// import Item from "../Item";
-var { Item } = require("../Item");
+import Item from "../Item";
 
-// export default class Sulfuras extends Item {
-class Sulfuras extends Item {
+export default class Sulfuras extends Item {
   // - qualité = 80
 }

@@ -1,8 +1,6 @@
-// import Item from "../Item";
-var { Item } = require("../Item");
+import Item from "../Item";
 
-// export default class Backstage extends Item {
-class Backstage extends Item {
+export default class Backstage extends Item {
   constructor(item) {
     this.item = item;
   }

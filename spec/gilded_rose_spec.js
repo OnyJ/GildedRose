@@ -32,26 +32,27 @@ describe("GildedRose shop manager", function () {
     });
   });
 
-  //
-  // it("Augmenter la qualité de 1 pour Aged Brie et Backstage passes", function () {
-  // listItems.push(new Item("Aged Brie", 20, 30));
-  // listItems.push(
-  // new Item("Backstage passes to a TAFKAL80ETC concert", 20, 30)
-  // );
-  //
-  // var expected = [
-  // { sellIn: 19, quality: 31 },
-  // { sellIn: 19, quality: 31 },
-  // ];
-  //
-  // let testItems = [];
-  // listItems.forEach((item) => {
-  // const aged = new AgedBrie(item);
-  // testItems.push(aged.update());
-  // });
-  // expected.forEach(function (testCase, idx) {
-  // expect(testItems[idx].quality).toBe(testCase.quality);
-  // expect(testItems[idx].sellIn).toBe(testCase.sellIn);
-  // });
-  // });
+  it("Augmenter la qualité de 1 pour Aged Brie et Backstage passes", function () {
+    listItems.push(new Item("Aged Brie", 20, 30));
+    listItems.push(
+      new Item("Backstage passes to a TAFKAL80ETC concert", 20, 30)
+    );
+
+    var expected = [
+      { sellIn: 19, quality: 31 },
+      { sellIn: 19, quality: 31 },
+    ];
+
+    let testItems = [];
+    listItems.forEach((item) => {
+      const aged = new AgedBrie(item);
+      testItems.push(aged.update());
+    });
+
+    expected.forEach(function (testCase, idx) {
+      // console.log(testItems);
+      expect(testItems[idx].quality).toBe(testCase.quality);
+      expect(testItems[idx].sellIn).toBe(testCase.sellIn);
+    });
+  });
 });
